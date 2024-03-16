@@ -23,7 +23,7 @@
 <script lang="ts" setup>
 import { onMounted, ref } from 'vue';
 
-const simOuNao = ref(true)
+const simOuNao = ref()
 
 
 
