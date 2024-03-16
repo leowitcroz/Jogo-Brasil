@@ -10,9 +10,9 @@
 
         <div class="casos">
           <p v-if="simOuNao" class="textoGatinho">Uhuuuu... Ja Que Insiste... Te Amo</p>
-          <p v-else class="textoGatinho">Resposta Errada Tente Novamente!</p>
+          <p v-if="simOuNao == false" class="textoGatinho">Resposta Errada Tente Novamente!</p>
           <img v-if="simOuNao" class="gatinhoNao" src="../assets/Slash.jpg" alt="">
-          <img v-else class="gatinhoNao" src="../assets/gatinBravo.png" alt="">
+          <img v-if="simOuNao == false" class="gatinhoNao" src="../assets/gatinBravo.png" alt="">
         </div>
       </div>
     </div>
